@@ -454,4 +454,13 @@
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="assets/js/gaia.js"></script>
 
+<script type="text/javascript">
+    $("img.img-circle").click(function() {
+        var id = $(this).closest("a").attr("href");
+        $(id).toggle("slow", function() {
+            $(this).attr("style", "");
+        });
+    });
+</script>
+
 </html>
