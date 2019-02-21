@@ -16,6 +16,7 @@
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="assets/css/fonts/fontawesome-all.min.css" rel="stylesheet">
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
 <body>
@@ -695,9 +696,9 @@
         </div>
     </div>
 
-    <div class="section section-small section-get-started">
-        <video width="320" height="240" autoplay>
-            <source src="assets/videos/servicio_frances_ingles_y_ruso.mp4" type="video/mp4">
+    <div class="section section-small section-get-started video-container">
+        <video autoplay controls preload="none">
+            <source src="assets/videos/servicio_frances_ingles_y_ruso.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
           Your browser does not support the video tag.
           </video>
     </div>
@@ -731,14 +732,5 @@
 
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="assets/js/gaia.js"></script>
-
-<script type="text/javascript">
-    $("img.img-circle").click(function() {
-        var id = $(this).closest("a").attr("href");
-        $(id).toggle("slow", function() {
-            $(this).attr("style", "");
-        });
-    });
-</script>
-
+<script type="text/javascript" src="assets/js/site.js"></script>
 </html>.

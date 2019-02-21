@@ -1,0 +1,7 @@
+.video-container{
+    text-align: center
+}
+.video-container video{
+    width: 600px;
+    height: 350px;
+}
